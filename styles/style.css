@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Colors */
+  --fill: var(--clr-light-red);
+
+  /* General */
+  --clr-primary: #381DDB;
+  --clr-secondary: #FC5252;
+  --clr-light-red: #FFA3A3;
+  --clr-light-red: #FFA3A3;
+  --clr-dark: #222;
+  --clr-light: #FFF;
+  --clr-light-gray: #D3D3D3;
+  --clr-gray: #808080;
+  --clr-dark-gray: #404040;
+  --clr-black: #000000;
+
+  /* Additional */
+  --clr-silver: #E0E0E0;
+  --clr-pumpkin: #DB841D;
+  --clr-brown: #AA6550;
+  --clr-magenta: #C00096;
+  --clr-light-pink: #FFCDCD;
+  --clr-light-peach: #FFBE9D;
+  --clr-light-blue: #84C4FF;
+
+  /* Sizes */
+
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-md: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 2.75rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ===== Styling ===== */

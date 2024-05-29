@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button,
+[type='submit'] {
+  display: inline-block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* CSS input reset */
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Reset Font Sizes ===== */
+
+body {
+  font-size: var(--size-sm);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: var(--size-3xl);
+}
+
+h3 {
+  font-size: var(--size-2xl);
+}
+
+h4 {
+  font-size: var(--size-xl);
+}
+
+h5 {
+  font-size: var(--size-md);
+}
+
+h6 {
+  font-size: var(--size-sm);
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--size-md);
+  }
+
+  h1 {
+    font-size: var(--size-6xl);
+  }
+
+  h2 {
+    font-size: var(--size-4xl);
+  }
+
+  h3 {
+    font-size: var(--size-2xl);
+  }
+
+  h4 {
+    font-size: var(--size-xl);
+  }
+
+  h5 {
+    font-size: var(--size-md);
+  }
+
+  h6 {
+    font-size: var(--size-sm);
+  }
+}
+
+
+/* ===== Reset Font Sizes ===== */

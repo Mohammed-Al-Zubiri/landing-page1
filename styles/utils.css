@@ -1,0 +1,220 @@
+/* container Utility Class */
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(.6rem + 2vw);
+  padding-right: calc(.6rem + 2vw);
+}
+
+/* ----------------------------- */
+
+.section {
+  padding-top: 3rem;
+}
+
+/* ----------------------------- */
+
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 870px;
+  }
+  .section {
+    padding-top: 5rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1336px;
+  }
+}
+
+/* ----------------------------- */
+
+.btn {
+  --btn-color: black;
+  color: var(--btn-color);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  padding: 0.5em 1em;
+  transition: color 300ms;
+}
+
+.btn.primary {
+  --btn-color: var(--clr-primary);
+}
+
+.btn.secondary {
+  --btn-color: var(--clr-light-red);
+}
+
+.btn.fill {
+  background: var(--btn-color);
+  color: var(--clr-light);
+  padding: 0.8rem 1.7rem;
+  box-shadow: 0 10px 30px rgba(56, 29, 219, 0.2);
+}
+
+.btn.outline {
+  border: 2px solid var(--btn-color);
+}
+
+.btn.outline:hover,
+.btn.outline:focus-visible {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .btn {
+    font-size: var(--size-md);
+  }
+}
+
+
+.with-arrow {
+  padding-right: 3.3em !important; 
+  position: relative;
+}
+
+.with-arrow::before {
+  content: "";
+  background-color: var(--btn-color);
+  --icon: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.80179 9.42814C8.21765 8.99062 8.90301 8.99065 9.3188 9.42832L12 12.2505L14.681 9.42842C15.0969 8.99087 15.7823 8.99066 16.1982 9.42834C16.6004 9.85162 16.6004 10.5279 16.1983 10.9511L12.7584 14.5719C12.5535 14.7874 12.2788 14.9 12 14.9C11.721 14.9 11.4461 14.7872 11.2414 14.5717L7.80162 10.951C7.39942 10.5278 7.39944 9.85141 7.80179 9.42814Z'/%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+  border: 1px solid var(--btn-color);
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  right: 1.3em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: right 200ms;
+}
+
+.with-arrow.arrow-bottom::before {
+  transform: translateY(-50%);
+}
+
+/* -------- font-sizes --------- */
+/* define utility classes for font-size property */
+
+.fs-xs {
+  font-size: var(--size-xs);
+}
+
+.fs-sm {
+  font-size: var(--size-sm);
+}
+
+.fs-md {
+  font-size: var(--size-md);
+}
+
+.fs-lg {
+  font-size: var(--size-lg);
+}
+
+.fs-xl {
+  font-size: var(--size-xl);
+}
+
+.fs-2xl {
+  font-size: var(--size-2xl);
+}
+
+.fs-3xl {
+  font-size: var(--size-3xl);
+}
+
+.fs-4xl {
+  font-size: var(--size-4xl);
+}
+
+.fs-5xl {
+  font-size: var(--size-5xl);
+}
+
+.fs-6xl {
+  font-size: var(--size-6xl);
+}
+
+.fs-7xl {
+  font-size: var(--size-7xl);
+}
+
+.fs-8xl {
+  font-size: var(--size-8xl);
+}
+
+.fs-9xl {
+  font-size: var(--size-9xl);
+}
+
+/* ----------------------------- */
+
+
+
+/* ----------------------------- */
+
+
+/* -------- font-sizes --------- */
+
+/* ----------------------------- */
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-x {
+  justify-content: center;
+}
+
+.center-y {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* ----------------------------- */
