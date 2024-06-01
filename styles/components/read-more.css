@@ -1,0 +1,79 @@
+.read-more {
+  margin: 3rem 0;
+}
+
+.read-more .right {
+  text-align: left;
+}
+
+.read-more .right p {
+  margin-top: 1.9rem;
+  color: var(--clr-gray);
+}
+
+.read-more .image-placeholder {
+  background: url(../../public/imgs/team-back.png);
+  background-size: contain;
+  width: clamp(17.1rem, 70vw,25rem);
+  height: clamp(17.1rem, 70vw,25rem);
+  flex-shrink: 0;
+  padding: 0 5vw;
+  margin: 3.75rem auto calc(2.25rem + 17%);
+  position: relative;
+  transform: translateX(-8.5%);
+  overflow: visible;
+}
+
+.read-more img {
+  width: 100%;
+  position: absolute;
+  right: -17%;
+  bottom: -17%;
+}
+
+.read-more :is(.wrapper, .right p) {
+  margin-bottom: 1.25rem;
+}
+
+.read-more .btn {
+  padding-left: 0;
+}
+
+@media (min-width: 768px) {
+  .read-more {
+    margin: 5rem 0;
+  }
+  .read-more .wrapper {
+    margin-bottom: 2.5rem;
+  }
+  .read-more .right p {
+    margin-top: 1.865rem;
+  }
+  .read-more .image-placeholder {
+    margin-bottom: calc(3rem + 17%);
+  }
+}
+
+@media (min-width: 1280px) {
+  .read-more {
+    margin: 8rem 0;
+  }
+  .read-more {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 7rem;
+    margin: 10rem 0;
+  }
+
+  .read-more .image-placeholder {
+    margin: 0 0 2rem;
+  }
+
+  .read-more .wrapper {
+    margin-bottom: 5rem;
+  }
+  .read-more .right p {
+    margin-top: 2.5rem;
+  }
+}
+

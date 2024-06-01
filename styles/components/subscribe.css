@@ -1,0 +1,83 @@
+.subscribe {
+  background: var(--clr-dark);
+  text-align: center;
+  padding: 2rem 0 1.25rem;
+  position: relative;
+}
+
+.subscribe > * {
+  max-width: clamp(18rem, 80%, 36rem);
+  margin: 0 auto;
+}
+
+.subscribe h2 {
+  color: var(--clr-light);
+}
+
+.subscribe :is(p, .wrapper) {
+  margin-top: 1.3rem;
+}
+
+.subscribe .wrapper {
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.subscribe :is(h2 + p, input) {
+  color: #c5c5c5;
+}
+
+.subscribe p:last-child {
+  color: var(--clr-gray);
+}
+
+.subscribe input {
+  display: block;
+  padding: 0.75rem 0.875rem;
+  background: #282828;
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    padding: 3.75rem 0;
+  }
+  .subscribe::before {
+    content: "";
+    width: 0.932rem;
+    height: 0.932rem;
+    background: var(--clr-light);
+    position: absolute;
+    top: 0.625rem;
+    left: 0.625rem;
+  }
+  .subscribe::after {
+    content: "";
+    width: 1.865rem;
+    height: 1.865rem;
+    background: var(--clr-primary);
+    position: absolute;
+    bottom: 0.625rem;
+    right: 0.625rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .subscribe {
+    padding: 7.5rem 0;
+  }
+  .subscribe > * {
+    max-width: 48rem;
+  }
+  .subscribe::before {
+    width: 1.865rem;
+    height: 1.865rem;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+  .subscribe::after {
+    width: 3.75rem;
+    height: 3.75rem;
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+}

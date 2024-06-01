@@ -2,12 +2,10 @@
 
 :root {
   /* Colors */
-  --fill: var(--clr-light-red);
 
   /* General */
   --clr-primary: #381DDB;
   --clr-secondary: #FC5252;
-  --clr-light-red: #FFA3A3;
   --clr-light-red: #FFA3A3;
   --clr-dark: #222;
   --clr-light: #FFF;
@@ -45,11 +43,11 @@
 
 }
 
-body {
+h1, h2, h3, h4, h5, h6, ul, button {
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
+body {
   font-family: 'Raleway', sans-serif;
 }
 

@@ -1,3 +1,29 @@
+/* -------- Seperator utility class --------- */
+.separator {
+  width: 90%;
+  height: 1px;
+  background: linear-gradient(to right, 
+                            transparent 0px, 
+                            var(--clr-light-red) calc(50% - 7.5px),
+                            transparent calc(50% - 7.5px), 
+                            transparent calc(50% + 7.5px),
+                            var(--clr-light-red) calc(50% + 7.5px), 
+                            transparent);
+  margin: 2rem auto;
+  position: relative;
+}
+
+.separator::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--clr-light-red);
+  margin: 0 auto;
+  transform: translateY(-2px);
+}
+
 /* container Utility Class */
 
 .container {
@@ -67,7 +93,6 @@
   --btn-color: black;
   color: var(--btn-color);
   font-weight: 600;
-  letter-spacing: -0.03em;
   padding: 0.5em 1em;
   transition: color 300ms;
 }
@@ -77,7 +102,7 @@
 }
 
 .btn.secondary {
-  --btn-color: var(--clr-light-red);
+  --btn-color: var(--clr-secondary);
 }
 
 .btn.fill {

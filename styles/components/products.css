@@ -1,0 +1,90 @@
+.products h2,
+.products > p {
+  text-align: center;
+}
+
+.products > p {
+  margin-top: 2.5rem;
+}
+
+.products p {
+  color: var(--clr-dark-gray);
+}
+
+.products-grid {
+  margin-top: 3.75rem;
+}
+
+.product {
+  width: 13.7rem;
+  padding: 1.25rem clamp(1.25rem, 20vw, 5rem) 3.6rem 1.25rem;
+  margin: 1rem auto 0;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.product .icon {
+  width: 4.4rem;
+  fill: var(--clr-primary);
+}
+
+.product h3 {
+  margin-top: 1.8rem;
+}
+
+.product p {
+  margin-top: 1.2rem;
+}
+
+.product::before {
+  content: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='%23381DDB' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.10912 0.326365C7.49322 -0.0420564 8.11355 -0.0420564 8.49765 0.326365L13.7092 5.32529C14.0969 5.69721 14.0969 6.30287 13.7092 6.67479L8.49778 11.6737C8.30509 11.8584 8.05342 11.95 7.80352 11.95C7.55363 11.95 7.30193 11.8585 7.10928 11.6737C6.72154 11.3018 6.72151 10.6961 7.10925 10.3242L10.6257 6.95112H0.985036C0.447111 6.95112 0 6.53113 0 6.00004C0 5.46888 0.44712 5.04896 0.985036 5.04896H10.6257L7.10912 1.67587C6.72138 1.30394 6.72138 0.698289 7.10912 0.326365Z'/%3E%3C/svg%3E");
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+.product:is(:hover, .active)::after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--clr-primary);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.product:is(:hover, .active) {
+  background: var(--clr-light-red);
+  fill: var(--clr-light);
+  box-shadow: 0 10px 40px 0 rgba(22, 22, 22, 0.15);
+}
+
+.product:is(:hover, .active) :is(h3, p) {
+  color: var(--clr-light);
+}
+
+@media (min-width: 768px) {
+  .products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4.4rem;
+  }
+
+  .product h3 {
+    margin-top: 2.5rem;
+  }
+  
+  .product p {
+    margin-top: 1.5rem;
+  }
+
+  .product {
+    padding: 1.8rem 1.8rem 4.6rem 1.8rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product {
+    padding: 1.8rem 3.14rem 5.5rem 1.8rem;
+  }
+}
