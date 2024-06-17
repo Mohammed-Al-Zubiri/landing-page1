@@ -1,4 +1,5 @@
 /* -------- Seperator utility class --------- */
+
 .separator {
   width: 90%;
   height: 1px;
@@ -38,6 +39,7 @@
 
 .section {
   padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 /* ----------------------------- */
@@ -70,6 +72,7 @@
   }
   .section {
     padding-top: 5rem;
+    padding-bottom: 3.3rem;
   }
 }
 
