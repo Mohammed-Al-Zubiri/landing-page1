@@ -10,28 +10,30 @@
 
 <body>
   <!-- Header and Hero Sections Start -->
-  <section class="header-hero flex-col">
+  <div class="header-hero flex-col">
     <header class="pg-header container flex center-y">
-      <svg class="logo" viewBox="0 0 70 26" width="100" fill="white">
-        <use href="#page_logo" />
-      </svg>
-      <button href="#" class="btn-menu btn outline fs-lg">Menu</button>
-      <div class="header-btns flex center-y">
-        <nav class="nav-menu">
-          <ul class="flex">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
-        </nav>
-        <div class="login-signup flex" style="color: var(--clr-primary);">
-          <a class="btn primary">Sign in</a>
-          <a class="btn primary outline">Sign up</a>
-        </div>
-      </div>
-    </header>
-    <div class="container hero">
+			<svg class="logo" viewBox="0 0 70 26" width="100" fill="white">
+				<use href="#page_logo" />
+			</svg>
+			<div class="header-menu">
+				<button class="btn-menu btn outline fs-lg">Menu</button>
+				<div class="header-btns flex center-y">
+					<nav class="nav-menu">
+						<ul class="flex">
+							<li><a class="active" href="#">Home</a></li>
+							<li><a href="#more">Blog</a></li>
+							<li><a href="#product">Product</a></li>
+							<li><a href="#contact">Contacts</a></li>
+						</ul>
+					</nav>
+					<div class="login-signup flex" style="color: var(--clr-primary);">
+						<a class="btn primary">Sign in</a>
+						<a class="btn primary outline">Sign up</a>
+					</div>
+				</div>
+			</div>
+		</header>
+    <section class="container hero">
       <div class="left">
         <div class="featured">
           <svg class="icon star" viewBox="0 0 26 26" width="30" height="30">
@@ -49,7 +51,7 @@
           <h3>Get started now</h3>
           <input type="text" name="name" placeholder="Name">
           <input type="email" name="email" placeholder="Email">
-          <input type="number" name="ph-number" placeholder="Phone Number">
+          <input type="tel" name="ph-number" placeholder="Phone Number">
           <input type="text" name="co-name" placeholder="Company Name">
           <input value="Sign Up" name="submit" type="submit" class="btn primary fill">
           <p>Support: <a href="mailto:help@udix.com" style="color: var(--clr-primary);">help@udix.com</a></p>
@@ -68,8 +70,8 @@
         </div>
         <img src="./imgs/signup.png" alt="Setup Image">
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <!-- Header and Hero Sections End -->
 
   <!-- Intro Start -->
@@ -84,7 +86,9 @@
         publishing assets or (in most cases) direct users directly to our clients.</p>
       <div class="counter">1 / 2</div>
     </div>
-    <img src="./imgs/office.png" alt="Office Photo">
+		<div class="image-placeholder">
+			<img width="470" src="./imgs/intro-image.jpeg" alt="Office Photo">
+		</div>
   </section>
   <!-- Intro End -->
   <div class="separator container"></div>
@@ -146,7 +150,7 @@
 
   <!-- Subscribe Section Start -->
   <div class="container">
-    <div class="subscribe">
+    <div id="contact" class="subscribe">
       <h2>Working with us are the pathto success</h2>
       <p>Get the Onboarding Package for Free and enjoy our platform <br> with the support of our professional onboarding
         team.</p>
@@ -182,6 +186,7 @@
         <img src="./imgs/partner6.png" alt="Principle Logo" class="part">
       </div>
     </div>
+    <div class="counter">1 / 2</div>
   </div>
   <!-- Parteners Section End -->
 

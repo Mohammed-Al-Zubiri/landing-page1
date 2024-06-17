@@ -112,6 +112,10 @@
   box-shadow: 0 10px 30px rgba(56, 29, 219, 0.2);
 }
 
+.btn.fill:is(:hover, :focus-visible) {
+  box-shadow: 4px 16px 16px rgba(56, 29, 219, 0.2);
+}
+
 .btn.outline {
   border: 2px solid var(--btn-color);
 }

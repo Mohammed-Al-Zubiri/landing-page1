@@ -1,5 +1,6 @@
 .pg-footer {
   padding: 4.25rem 3.75rem 1.45rem;
+  background: #F8F8F8;
 }
 
 .pg-footer .row {
@@ -34,7 +35,7 @@
 .pg-footer .r2 p {
   font-size: 12px;
   max-width: 23.8rem;
-  color: var(--clr-light-gray);
+  color: var(--clr-gray);
 }
 
 .pg-footer .logo {
@@ -48,6 +49,10 @@
 
 .social-links svg {
   width: 40px;
+}
+
+.social-links svg:hover {
+  fill: var(--clr-primary);
 }
 
 @media (max-width: 1280px){
