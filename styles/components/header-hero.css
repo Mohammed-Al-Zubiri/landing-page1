@@ -212,6 +212,10 @@ header .header-btns {
     margin-top: 0.625rem;
   }
 
+  .signup-frm input:focus {
+    border-color: var(--clr-primary);
+  }
+
   /* ===== Show ruler div ===== */
   .hero .right .ruler {
     background: #f5f5f5;
@@ -355,10 +359,6 @@ header .header-btns {
   .signup-frm [type="submit"],
   .signup-frm p {
     margin-top: 0.75rem;
-  }
-
-  .signup-frm input:focus {
-    border-color: var(--clr-primary);
   }
   
   /* ======= Hero End ======= */
